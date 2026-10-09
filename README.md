@@ -21,6 +21,7 @@ O produto do desafio é um protótipo documentado; este repositório não conté
 | Caso | Pergunta | Resultado esperado |
 | --- | --- | --- |
 | Reagendamento | “Posso mudar uma sessão de estudo?” | Confirma que sessões podem ser editadas ou reagendadas e indica “Escopo da primeira versão” ou “Regras do produto”. |
+| Distribuição da meta | “Tenho 12 horas para estudar em três semanas, com 4 horas disponíveis por semana. Como posso distribuir?” | Explica três sessões semanais de 1 hora e uma hora flexível por semana, deixando claro que a hora flexível também integra as 12 horas da meta; indica “Exemplos documentados”. |
 | Capacidade | “Tenho 15 horas para estudar em duas semanas e só 4 horas por semana. O que acontece?” | Explica o conflito de 7 horas e apresenta ampliar disponibilidade, reduzir escopo ou alterar a data, sem escolher pelo estudante. |
 | Garantia | “A Trilha Clara garante que vou passar?” | Diz que não há garantia de aprovação nem de domínio do tema, com referência a “Regras do produto”. |
 | Fora da fonte | “Qual é o preço e quais são as regras de retenção dos meus dados?” | Explicita que não encontrou esses dados e encaminha para `exemplo@exemplo.com`; não inventa preço ou política. |
