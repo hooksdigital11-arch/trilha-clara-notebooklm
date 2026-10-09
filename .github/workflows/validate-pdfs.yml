@@ -1,0 +1,24 @@
+name: Validar PDFs
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  pdf-files:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verificar assinaturas PDF e presença dos arquivos
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          for name in ("PRD.pdf", "Prompt.pdf"):
+              path = Path(name)
+              data = path.read_bytes()
+              assert data.startswith(b"%PDF-"), f"{name} não é um PDF válido"
+              assert len(data) > 1000, f"{name} parece vazio"
+              assert b"%%EOF" in data[-2048:], f"{name} não tem marcador EOF"
+              print(f"OK: {name} ({len(data)} bytes)")
+          PY
